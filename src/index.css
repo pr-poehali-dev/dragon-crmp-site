@@ -4,42 +4,42 @@
 
 @layer base {
   :root {
-    --background: 0 0% 5%;
-    --foreground: 0 5% 92%;
+    --background: 270 15% 5%;
+    --foreground: 270 10% 92%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 5% 92%;
+    --card: 270 15% 8%;
+    --card-foreground: 270 10% 92%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 5% 92%;
+    --popover: 270 15% 8%;
+    --popover-foreground: 270 10% 92%;
 
-    --primary: 0 85% 50%;
+    --primary: 270 80% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 10% 12%;
-    --secondary-foreground: 0 5% 92%;
+    --secondary: 270 15% 12%;
+    --secondary-foreground: 270 10% 92%;
 
-    --muted: 0 5% 10%;
-    --muted-foreground: 0 5% 55%;
+    --muted: 270 10% 10%;
+    --muted-foreground: 270 10% 55%;
 
-    --accent: 0 85% 50%;
+    --accent: 270 80% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 5% 92%;
+    --destructive-foreground: 270 10% 92%;
 
-    --border: 0 10% 15%;
-    --input: 0 10% 15%;
-    --ring: 0 85% 50%;
+    --border: 270 20% 15%;
+    --input: 270 20% 15%;
+    --ring: 270 80% 55%;
     --radius: 0.25rem;
 
-    --br-red: #d42b2b;
-    --br-red-dark: #9b1c1c;
-    --br-red-glow: rgba(212, 43, 43, 0.35);
+    --br-red: #8b2fc9;
+    --br-red-dark: #6b1fa0;
+    --br-red-glow: rgba(139, 47, 201, 0.35);
     --br-black: #080808;
     --br-dark: #0e0e0e;
     --br-card: #111111;
-    --br-border: rgba(212, 43, 43, 0.2);
+    --br-border: rgba(139, 47, 201, 0.2);
     --br-gold: #c9922f;
   }
 }
@@ -60,12 +60,12 @@
     background-image:
       radial-gradient(
         ellipse at 15% 15%,
-        rgba(212, 43, 43, 0.06) 0%,
+        rgba(139, 47, 201, 0.07) 0%,
         transparent 45%
       ),
       radial-gradient(
         ellipse at 85% 85%,
-        rgba(155, 28, 28, 0.04) 0%,
+        rgba(107, 31, 160, 0.05) 0%,
         transparent 45%
       );
     background-attachment: fixed;
@@ -98,12 +98,12 @@
 .glow-red {
   box-shadow:
     0 0 18px var(--br-red-glow),
-    0 0 36px rgba(212, 43, 43, 0.15);
+    0 0 36px rgba(139, 47, 201, 0.15);
 }
 .glow-text-red {
   text-shadow:
-    0 0 24px rgba(212, 43, 43, 0.9),
-    0 0 48px rgba(212, 43, 43, 0.4);
+    0 0 24px rgba(139, 47, 201, 0.9),
+    0 0 48px rgba(139, 47, 201, 0.4);
 }
 
 /* Scanline overlay */
@@ -169,10 +169,10 @@
 @keyframes borderPulse {
   0%,
   100% {
-    border-color: rgba(212, 43, 43, 0.3);
+    border-color: rgba(139, 47, 201, 0.3);
   }
   50% {
-    border-color: rgba(212, 43, 43, 0.75);
+    border-color: rgba(139, 47, 201, 0.75);
   }
 }
 .border-pulse {
@@ -190,10 +190,10 @@
 .shimmer-text {
   background: linear-gradient(
     90deg,
-    #d42b2b 0%,
-    #ff6b6b 40%,
-    #d42b2b 60%,
-    #9b1c1c 100%
+    #8b2fc9 0%,
+    #c084fc 40%,
+    #8b2fc9 60%,
+    #6b1fa0 100%
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -209,12 +209,12 @@
 
 .br-card {
   background: var(--br-card);
-  border: 1px solid rgba(212, 43, 43, 0.15);
+  border: 1px solid rgba(139, 47, 201, 0.15);
   transition:
     border-color 0.25s,
     transform 0.2s;
 }
 .br-card:hover {
-  border-color: rgba(212, 43, 43, 0.45);
+  border-color: rgba(139, 47, 201, 0.45);
   transform: translateY(-2px);
 }
