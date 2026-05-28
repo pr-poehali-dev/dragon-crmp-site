@@ -1,5 +1,7 @@
 {
-  "google-auth-google-auth": "https://functions.poehali.dev/78280e5d-0f7c-4f08-9d8c-1ff65d32075d",
+  "google-auth-google-auth": "https://functions.poehali.dev/3a3ba264-7c5e-47a3-a713-ba51c4783a66",
+  "telegram-bot-telegram-auth": "https://functions.poehali.dev/351001b3-adef-4b14-8c9e-b81a79d6d283",
+  "telegram-bot-telegram-bot": "https://functions.poehali.dev/1005bbf6-0a08-4b4e-883b-96875d73cabc",
   "yookassa-yookassa": "https://functions.poehali.dev/0af07723-e499-41dc-be5c-ad224f15b731",
   "yookassa-yookassa-webhook": "https://functions.poehali.dev/1a5bc7c8-9b89-4b66-a918-615bb96455de"
 }
