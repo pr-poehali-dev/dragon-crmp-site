@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { NAV_ITEMS } from "@/components/server/constants";
 import { Navbar, Footer } from "@/components/server/Navbar";
 import { HeroSection, AboutSection } from "@/components/server/HeroAboutSection";
-import { RulesSection, DonateSection, FAQSection, ContactsSection } from "@/components/server/ContentSections";
+import { RulesSection, FAQSection, ContactsSection } from "@/components/server/ContentSections";
 
 export default function Index() {
   const [activeSection, setActiveSection] = useState("home");
@@ -30,7 +30,6 @@ export default function Index() {
       <HeroSection />
       <AboutSection />
       <RulesSection />
-      <DonateSection />
       <FAQSection />
       <ContactsSection />
       <Footer />

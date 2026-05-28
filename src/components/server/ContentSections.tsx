@@ -145,15 +145,14 @@ export function FAQSection() {
 
 export function ContactsSection() {
   const links = [
-    { icon: "MessageCircle", label: "Discord", sub: "discord.gg/dragoncrmp", color: "hover:border-indigo-700/50" },
-    { icon: "Send", label: "Telegram", sub: "@dragoncrmp", color: "hover:border-sky-700/50" },
-    { icon: "Globe", label: "Форум", sub: "dragoncrmp.ru/forum", color: "hover:border-purple-700/50" },
-    { icon: "Youtube", label: "YouTube", sub: "Dragon CRMP Official", color: "hover:border-purple-700/50" },
+    { icon: "Send", label: "Telegram", sub: "t.me/crmpdragon", url: "https://t.me/crmpdragon", color: "hover:border-sky-700/50" },
+    { icon: "Crown", label: "Макс", sub: "max.ru", url: "https://max.ru/join/5E0z0gwJB8arY8_9kdcjdmid4nJmUSY7mfMpGhBIzYw", color: "hover:border-purple-700/50" },
+    { icon: "MessageCircle", label: "Discord", sub: "discord.gg/uZ5GX8BZ", url: "https://discord.gg/uZ5GX8BZ", color: "hover:border-indigo-700/50" },
   ];
 
   return (
     <section id="contacts" className="py-28">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-3xl mx-auto px-6">
         <div className="flex items-center gap-4 mb-14">
           <div className="w-1 h-10 bg-purple-700" />
           <div>
@@ -162,43 +161,20 @@ export function ContactsSection() {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+        <div className="grid sm:grid-cols-3 gap-4">
           {links.map((link) => (
-            <button
+            <a
               key={link.label}
-              className={`br-card group p-5 text-center ${link.color} transition-all duration-200`}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`br-card group p-6 text-center ${link.color} transition-all duration-200 block`}
             >
-              <Icon name={link.icon} size={28} className="text-purple-700 mx-auto mb-3 group-hover:text-purple-500 transition-colors" />
+              <Icon name={link.icon} size={32} className="text-purple-700 mx-auto mb-3 group-hover:text-purple-500 transition-colors" />
               <div className="font-['Oswald'] text-base text-white uppercase tracking-wider mb-1">{link.label}</div>
               <div className="font-['Golos_Text'] text-gray-600 text-xs">{link.sub}</div>
-            </button>
+            </a>
           ))}
-        </div>
-
-        <div className="br-card p-8">
-          <h3 className="font-['Oswald'] text-xl text-white uppercase tracking-widest mb-1">Обратная связь</h3>
-          <p className="text-gray-600 font-['Golos_Text'] text-sm mb-6">Напишите нам — ответим в течение 24 часов</p>
-
-          <div className="grid md:grid-cols-2 gap-4 mb-4">
-            <input
-              type="text"
-              placeholder="Ваш ник"
-              className="bg-black/70 border border-purple-900/30 focus:border-purple-700/60 px-4 py-3 text-white font-['Golos_Text'] text-sm placeholder:text-gray-700 outline-none transition-colors w-full"
-            />
-            <input
-              type="email"
-              placeholder="Email (необязательно)"
-              className="bg-black/70 border border-purple-900/30 focus:border-purple-700/60 px-4 py-3 text-white font-['Golos_Text'] text-sm placeholder:text-gray-700 outline-none transition-colors w-full"
-            />
-          </div>
-          <textarea
-            placeholder="Ваше сообщение..."
-            rows={4}
-            className="w-full bg-black/70 border border-purple-900/30 focus:border-purple-700/60 px-4 py-3 text-white font-['Golos_Text'] text-sm placeholder:text-gray-700 outline-none transition-colors resize-none mb-4"
-          />
-          <button className="glow-red px-8 py-3 bg-purple-700 hover:bg-purple-600 text-white font-['Oswald'] text-sm tracking-widest uppercase transition-all duration-200 hover:scale-105">
-            Отправить
-          </button>
         </div>
       </div>
     </section>

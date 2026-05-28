@@ -2,7 +2,6 @@ export const NAV_ITEMS = [
   { id: "home", label: "Главная" },
   { id: "about", label: "О сервере" },
   { id: "rules", label: "Правила" },
-  { id: "donate", label: "Донат" },
   { id: "faq", label: "FAQ" },
   { id: "contacts", label: "Контакты" },
 ];
