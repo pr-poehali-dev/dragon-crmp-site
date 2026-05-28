@@ -22,9 +22,11 @@ export function Navbar({ active, onNav }: { active: string; onNav: (id: string) 
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-[#080808]/95 backdrop-blur-md border-b border-purple-900/30" : "bg-transparent"}`}>
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
         <button onClick={() => handleNav("home")} className="flex items-center gap-3 group">
-          <div className="w-8 h-8 bg-purple-700 flex items-center justify-center rounded-sm glow-red">
-            <span className="font-['Oswald'] text-white font-bold text-sm">BR</span>
-          </div>
+          <img
+            src="https://cdn.poehali.dev/projects/52949190-26fd-4571-99bd-793324fdf696/bucket/43a6a535-7ae3-442e-aefb-948ec375ed45.jpg"
+            alt="Dragon CRMP"
+            className="w-9 h-9 rounded-sm object-cover glow-red"
+          />
           <div className="text-left">
             <div className="font-['Oswald'] text-base font-bold text-white leading-none tracking-widest uppercase group-hover:text-purple-400 transition-colors">
               Dragon CRMP

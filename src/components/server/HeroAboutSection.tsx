@@ -52,12 +52,7 @@ export function HeroSection() {
           >
             Начать играть
           </button>
-          <button
-            onClick={() => document.getElementById("donate")?.scrollIntoView({ behavior: "smooth" })}
-            className="px-8 py-3 border border-purple-800/50 hover:border-purple-600/70 text-gray-400 hover:text-white font-['Oswald'] text-base tracking-widest uppercase transition-all duration-200 hover:bg-purple-950/30"
-          >
-            Привилегии
-          </button>
+
         </div>
 
         <div className="animate-fade-up-delay-4 inline-flex items-center gap-4 border border-purple-900/30 border-pulse px-6 py-3 bg-black/60">
